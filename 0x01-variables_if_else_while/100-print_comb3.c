@@ -7,24 +7,34 @@
 
 int main(void)
 {
-	int digit_1, digit_2;
 
-	for (digit_1 = 0; digit_2 < 9; digit_1++)
+	int i;
+	int e;
+
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-		for (digit_2 = digit_1; digit_2 < 10; digit_2++)
+		i = 48;
+		while (i < 58)
 		{
-			putchar((digit_1 % 10) + '0');
-			putchar((digit_2 % 10) + '0');
-
-			if (digit_1 == 8 && digit_2 == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (e != i && e < i)
+			{
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
 		}
+		e++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
 
