@@ -2,7 +2,7 @@
 
 /**
  * _strlen - Functions that return lenght of a string
- * @str: String to get it's lenght on
+ * @s: String to get it's lenght on
  *
  * Return: The lenght of @str
  */
