@@ -11,6 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, f, omo;
+
 	f = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -22,10 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 			{
 
 				f++;
-				omo =1;
+				omo = 1;
 			}
 		}
-		 if (omo == 0)
+
+		if (omo == 0)
 		{
 
 			return (f);
